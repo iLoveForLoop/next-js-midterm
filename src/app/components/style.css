@@ -1,0 +1,23 @@
+.hov-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hov-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust the distance from text */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of underline */
+    background-color: rgb(255, 255, 255); /* Change to match your design */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .hov-underline:hover::before {
+    width: 100%;
+  }
+
+.test{
+    background-color: aquamarine;
+}
